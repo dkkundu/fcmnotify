@@ -1,3 +1,5 @@
+LICENSE
+MANIFEST.in
 README.rst
 setup.py
 fcmnotify/__init__.py
@@ -15,6 +17,7 @@ fcmnotify/migrations/__init__.py
 fcmnotify/models/__init__.py
 fcmnotify/models/fcm_settings.py
 fcmnotify/models/user_fcm_token.py
+fcmnotify/templates/main.html
 fcmnotify/tests/__init__.py
 fcmnotify/views/__init__.py
 fcmnotify/views/download_fcm_file.py

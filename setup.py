@@ -13,7 +13,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     license='MIT License',  # example license
-    description='A simple Django app to send notifications using Firebase!',
+    description='A simple Django app to send notifications using Firebase! Adding Firebase Cloud Messaging Service into a Django Project The aim of this repository is to provide a step-by-step guide and a basic project sample to implement FCM (Firebase Cloud Messaging) feature into a django-based project.',
     long_description=README,
     url='https://github.com/dkkundu/fcmnotify',
     author='Dipto Kumar Kundu',
