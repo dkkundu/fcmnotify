@@ -1,8 +1,8 @@
 =====
-Polls
+FCM NOTIFY
 =====
 
-Polls is a simple Django app to conduct Web-based polls. For each
+fcmnotify is a simple Django app to conduct Web-based fcmnotify. For each
 question, visitors can choose between a fixed number of answers.
 
 Detailed documentation is in the "docs" directory.
