@@ -55,7 +55,8 @@ def showFirebaseJS(request):
 def download_file(request):
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     filename = 'fcm_settings.html'
-    filepath = BASE_DIR + '/download/' + filename
+    
+    filepath = os.path.join(BASE_DIR + "download") + filename
     path = open(filepath, 'w')
     fcm = get_object_or_404(FCMSettings, is_active=True)
     fcm_config = 'var firebaseConfig = { apiKey: "' + f"{fcm.api_key}" + '",authDomain:"' + f"{fcm.auth_domain}" + '",databaseURL: "' + f"{fcm.database_URL}" + '",projectId:"' + f"{fcm.project_id}"+'" ,storageBucket:"' + f"{fcm.storage_bucket}"+'",messagingSenderId:"' + f"{fcm.messaging_sender_id}"+'",appId:"' + f"{fcm.app_id}"+'",measurementId:"' + f"{fcm.measurement_id}"+'",usePublicVapidKey:"' + f"{fcm.use_public_vapid_key}"+'" };' # noqa
